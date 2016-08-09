@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>一家人</title>
+    <title>2016 阿龜松 一家人</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -31,9 +31,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
+ 
+ 
   <body>
-
+  
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -44,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">2016 阿龜松 一家人</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -72,29 +73,79 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
+     
+	  
     <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Rick Lee DIY 視覺化設計</h1>
-        <p>Data and Table put right here.</p>
+        <h1>視覺化分析</h1>
+        <p>Visualization Analysis</p>
 		<div class="alert alert-success">
-		<?php
+		
+			<?php
 $var_a = $_REQUEST['var_a'];
 $var_b = $_REQUEST['var_b'];
 print_r($var_a + $var_b);
 
 ?>
 
+	
+
 <br>
 <br>
+
+	  <h3>Input your photo to get the latest fruit price and quality level</h3>
+      <img src="aaa.jpg"></img>
+	  
+	  
+<div class="row" id="imagePicker">
+    <div id="imageDiv" class="ImageSelector" style="opacity: 0; ">
+      
+        
+    </div>
+
+    <div id="imageUrl" class="row">
+
+         <br>
+<br>
+
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="input-group url-group">
+                <input type="text" id="idTextField" class="form-control" placeholder="Give me the URL to an image" />
+                <div class="btn btn-default" type="button" id="idText
+				Button">Go!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+		
+		<label id="uploadLabel" class="center-block" style="width: 230px;">
+        <button id="uploadFileId" class="btn btn-default action" onclick=" document.getElementById('uploadBtn').click(); ">
+            <span>
+                <img src="bbb.jpg" style="width: 25px; height: 25px" />
+            </span>
+            Use your own photo
+			
+			<br>
+			
+        </button>
+        <input id="uploadBtn" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px">
+    </label>
+
+	
+	
+	
+	
+		
+	  
        </div>
 	   
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">找到按鈕</a>
-        </p>
-		<div class="btn btn-lg btn-success" role="button">我的按鈕 </div>
+        
       </div>
 	  
 	        <div class="row marketing">
@@ -131,7 +182,7 @@ print_r($var_a + $var_b);
         <p>&copy; 2016 Company, Inc.</p>
       </footer>
 	  
-	  
+
 	  
     </div> <!-- /container -->
 
@@ -146,5 +197,3 @@ print_r($var_a + $var_b);
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-
-
