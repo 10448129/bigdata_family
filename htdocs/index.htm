@@ -31,9 +31,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
+ 
+ 
   <body>
-
+  
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -72,28 +73,73 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
+     
+	  
     <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Rick Lee DIY 視覺化設計</h1>
-        <p>Data and Table put right here.</p>
+        <h1>視覺化分析</h1>
+        <p>Visualization Analysis</p>
 		<div class="alert alert-success">
 		
 		<form method = "POST" action="action.php">
-      請輸入A : <input name = "var_a"><BR>
-      請輸入B : <input name ="var_b"><BR>
-      <input type = "submit">
+           
         </form>
 <br>
 <br>
+
+	  <h2>Input your photo to get the latest fruit price and quality level</h2>
+      <img src="aaa.jpg"></img>
+	  
+	  
+<div class="row" id="imagePicker">
+    <div id="imageDiv" class="ImageSelector" style="opacity: 0; ">
+      
+        
+    </div>
+
+    <div id="imageUrl" class="row">
+
+         <br>
+<br>
+
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="input-group url-group">
+                <input type="text" id="idTextField" class="form-control" placeholder="Give me the URL to an image" />
+                <div class="btn btn-default" type="button" id="idText
+				Button">Go!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+		
+		<label id="uploadLabel" class="center-block" style="width: 230px;">
+        <button id="uploadFileId" class="btn btn-default action" onclick=" document.getElementById('uploadBtn').click(); ">
+            <span>
+                <img src="bbb.jpg" style="width: 25px; height: 25px" />
+            </span>
+            Use your own photo
+			
+			<br>
+			
+        </button>
+        <input id="uploadBtn" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px">
+    </label>
+
+	
+	
+	
+	
+		
+	  
        </div>
 	   
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">找到按鈕</a>
-        </p>
-		<div class="btn btn-lg btn-success" role="button">我的按鈕 </div>
+        
       </div>
 	  
 	        <div class="row marketing">
@@ -130,7 +176,7 @@
         <p>&copy; 2016 Company, Inc.</p>
       </footer>
 	  
-	  
+
 	  
     </div> <!-- /container -->
 

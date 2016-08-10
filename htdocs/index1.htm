@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -83,19 +83,13 @@
         <p>Visualization Analysis</p>
 		<div class="alert alert-success">
 		
-			<?php
-$var_a = $_REQUEST['var_a'];
-$var_b = $_REQUEST['var_b'];
-print_r($var_a + $var_b);
-
-?>
-
-	
-
+		<form method = "POST" action="action.php">
+           
+        </form>
 <br>
 <br>
 
-	  <h3>Input your photo to get the latest fruit price and quality level</h3>
+	  <h2>Input your photo to get the latest fruit price and quality level</h2>
       <img src="aaa.jpg"></img>
 	  
 	  
@@ -139,9 +133,16 @@ print_r($var_a + $var_b);
 
 	
 	
+	<div class="page-header">
+        <h1>Result</h1>
+      </div>
+      <div class="well">
+        <p>We found the fruit is Apple and the price range will be NT40 to NT56 with 中上 quality	</p>
+      </div>
+	  
+	  
 	
-	
-		
+
 	  
        </div>
 	   
