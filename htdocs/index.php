@@ -1,4 +1,5 @@
-﻿
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,10 +32,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
+ 
+ 
   <body>
 
-    <div class="container">
+
+    <div class="container" style="background-color:#FFD382;">
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
@@ -43,30 +46,42 @@
             <li role="presentation"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Bigdata_family</h3>
-      </div>
+        <h3 class="text-muted"><span style="font-size:2em;">Bigdata_family</span></h3>
 
-      <div class="jumbotron">
-        <h1>品質鑑定</h1>
+	   
+        
+
+      </div>
+      
+      <div class="jumbotron"  style="background-color:#FFF3DE;" >
+	  
+        <h1><span style="font-family:DFKai-sb;"></span>資料輸入</h1>
 		<img src="fruit.png" ></img>
-         <label id="uploadLabel" class="center-block" style="width: 230px;">
-		<button id="uploadFileId" class="btn btn-default action" onclick=" document.getElementById('uploadBtn').click(); ">
-            <span>
-                <img src="camera.png" style="width: 25px; height: 25px" />
-            </span>
-            Input your photo ! Click Me !
-        </button>
-		<input id="uploadBtn" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px">
-		</label>
+      
+<form action="index1.htm" method="post" enctype="multipart/form-data">
+    
+    <h2><input type="file" name="fileToUpload" id="fileToUpload"><br>
+    <h2><input type="submit" value="確認" name="submit">
+
+</form>
+
+
+
+
+
 
        
       </div>
 
-      
-
       <footer class="footer">
         <p>&copy; 2016 Company, Inc.</p>
       </footer>
+
+
+
+	  
+
+	  
 
     </div> <!-- /container -->
 
@@ -75,3 +90,8 @@
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
+
+
+
+
