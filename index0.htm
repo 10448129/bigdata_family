@@ -58,7 +58,7 @@
         <h1><span style="font-family:DFKai-sb;"></span>資料輸入</h1>
 		<img src="fruit.png" ></img>
       
-<form action="index1.htm" method="post" enctype="multipart/form-data">
+<form action="index01.htm" method="post" enctype="multipart/form-data">
     
     <h2><input type="file" name="fileToUpload" id="fileToUpload"><br>
     <h2><input type="submit" value="確認" name="submit">
