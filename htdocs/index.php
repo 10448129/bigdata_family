@@ -34,7 +34,7 @@
 
   <body>
 
-    <div class="container" style="background-color:#FFD382;">
+    <div class="container">
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
@@ -43,23 +43,26 @@
             <li role="presentation"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted"><span style="font-size:2em;">Bigdata_family</span></h3>
+        <h3 class="text-muted">Bigdata_family</h3>
       </div>
-      
-      <div class="jumbotron"  style="background-color:#FFF3DE;" >
-	  
-        <h1><span style="font-family:DFKai-sb;">品質鑑定</span></h1>
-		<img src="fruit.png" ></img>
-        
-<form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
 
-</form>
+      <div class="jumbotron">
+        <h1>品質鑑定</h1>
+		<img src="fruit.png" ></img>
+         <label id="uploadLabel" class="center-block" style="width: 230px;">
+		<button id="uploadFileId" class="btn btn-default action" onclick=" document.getElementById('uploadBtn').click(); ">
+            <span>
+                <img src="camera.png" style="width: 25px; height: 25px" />
+            </span>
+            Input your photo ! Click Me !
+        </button>
+		<input id="uploadBtn" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px">
+		</label>
 
        
       </div>
+
+      
 
       <footer class="footer">
         <p>&copy; 2016 Company, Inc.</p>
